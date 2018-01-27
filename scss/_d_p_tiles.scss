@@ -1,0 +1,44 @@
+/**
+ * Shuffle.js gallery paragraph
+ */
+
+// Colour variables used in this paragraph
+$d-p-tiles-line-color: $color-agamemnon !default;
+$d-p-tiles-color: $color-hecuba !default;
+
+// Margins, paddings and sizing.
+$d-p-tiles-line-margin-top: 1rem !default;
+$d-p-tiles-line-margin-bottom: 1rem !default;
+$d-p-tiles-margin-y: 5% !default;
+
+.paragraph--type--d-p-tiles {
+  margin-top: $d-p-tiles-margin-y;
+  margin-bottom: $d-p-tiles-margin-y;
+
+  > h2 {
+    @include font-main-header;
+    text-align: center;
+  }
+
+  .field--name-field-d-long-text {
+    p {
+      color: $d-p-tiles-color;
+      text-align: center;
+    }
+
+    &:before {
+      @include decoration-header-line-main-center;
+      background: $d-p-tiles-line-color;
+      margin-top: $d-p-tiles-line-margin-top;
+      margin-bottom: $d-p-tiles-line-margin-bottom;
+    }
+  }
+
+  .field--name-field-d-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
