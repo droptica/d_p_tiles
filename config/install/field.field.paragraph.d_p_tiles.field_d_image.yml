@@ -10,8 +10,8 @@ id: paragraph.d_p_tiles.field_d_image
 field_name: field_d_image
 entity_type: paragraph
 bundle: d_p_tiles
-label: Gallery images
-description: 'Upload 1 or more images here. There will be 4, 3, 2 or one image in the row, so the perfect count will be 12. There is no pagination.'
+label: 'Gallery tiles'
+description: 'Upload 1 or more images here. There is no pagination. Append "2x2" to "alt" field to make image twice bigger. This "2x2" text will be invisible to user.'
 required: true
 translatable: false
 default_value: {  }

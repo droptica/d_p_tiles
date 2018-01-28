@@ -1,6 +1,6 @@
 {
     "name": "droptica/d_p_tiles",
-    "description": "Droopler paragraph containing shuffle.js gallery.",
+    "description": "Droopler paragraph containing Masonry gallery.",
     "type": "drupal-module",
     "license": "GPL-2.0+",
     "homepage": "https://github.com/droptica/d_p_tiles",

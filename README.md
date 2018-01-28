@@ -1,4 +1,4 @@
-# Shuffle.js gallery paragraph for Droopler #
+# Masonry gallery paragraph for Droopler #
 [![N|Solid](https://www.droopler.pl/profiles/contrib/droopler/themes/custom/droopler_theme/logo.svg)](http://droopler.pl)
 
 *The module is not supported at this time. Currently it works only with **dev-new-paragraphs** branch of Droopler.* 
@@ -13,7 +13,8 @@ Put this module in the "require" section of your composer.json. Remember to inst
 "require": {
   "droptica/d_p_tiles.js":  "^1.0",
   "drupal/colorbox": "^1.4",
-  "npm-asset/jquery-colorbox": "^1.6"
+  "npm-asset/jquery-colorbox": "^1.6",
+  "npm-asset/masonry-layout": "^4.2.1"
 }
 ```
 
@@ -49,4 +50,4 @@ Finally add this to "extra" section as first item in "installer-paths":
 
 4. Run **gulp compile** in droopler_subtheme directory
 5. Enable module in Drupal.
-6. Enjoy the new paragraph :-).
+6. Enjoy the new paragraph :-). Remember - if you want a tile to be 2x bigger than others - append "2x2" string to image's ALT text.

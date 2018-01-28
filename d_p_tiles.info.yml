@@ -1,12 +1,14 @@
 name: d_p_tiles
-description: 'Droopler feature containing shuffle.js gallery paragraph.'
+description: 'Droopler feature containing Masonry tile gallery paragraph.'
 type: module
 core: 8.x
 package: d
 dependencies:
+  - colorbox
+  - d_p
   - field
   - file
   - image
   - paragraphs
-  - colorbox
+  - text
 version: 8.x-1.0

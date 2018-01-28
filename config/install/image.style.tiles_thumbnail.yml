@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies: {  }
 name: tiles_thumbnail
-label: 'Gallery thumbnail'
+label: 'Tiles gallery thumbnail 1x1'
 effects:
-  60f8033e-d06b-4f1d-92e6-f24b2619ed9c:
-    uuid: 60f8033e-d06b-4f1d-92e6-f24b2619ed9c
+  9e46c060-1027-4c9d-9a6e-43ac0db85220:
+    uuid: 9e46c060-1027-4c9d-9a6e-43ac0db85220
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 320
-      height: 240
+      width: 466
+      height: 307

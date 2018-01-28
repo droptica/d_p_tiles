@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a gallery field in a paragraph.
+ * Theme override for a gallery tile field in a paragraph.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -43,23 +43,14 @@
   'field--type-' ~ field_type|clean_class,
   'field--label-' ~ label_display,
   'row',
+  'd-tiles',
   'text-center',
   'mt-4'
 ] %}
 
-{# Show 4 items in a row for XL, 3 for LG and MD, 2 for SM and 1 for XS #}
-{% set item_classes = [
-  'col-xl-3',
-  'col-md-4',
-  'col-sm-6',
-  'mb-3',
-  'field__item'
-] %}
-
-<div{{ attributes.addClass(classes, 'field__items') }}>
+<div {{ attributes.addClass(classes, 'field__items') }}>
+  <div class="d-tiles-sizer"></div>
   {% for item in items %}
-    <div{{ item.attributes.addClass(item_classes) }}>
-      {{ item.content }}
-    </div>
+    {{ item.content }}
   {% endfor %}
 </div>

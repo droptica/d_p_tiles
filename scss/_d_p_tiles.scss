@@ -12,6 +12,8 @@ $d-p-tiles-line-margin-bottom: 1rem !default;
 $d-p-tiles-margin-y: 5% !default;
 
 .paragraph--type--d-p-tiles {
+  @include clearfix;
+
   margin-top: $d-p-tiles-margin-y;
   margin-bottom: $d-p-tiles-margin-y;
 
@@ -35,10 +37,44 @@ $d-p-tiles-margin-y: 5% !default;
   }
 
   .field--name-field-d-image {
+    a {
+      display: block;
+    }
+
     img {
       width: 100%;
       height: auto;
+      margin: 0 !important;
+      display: block;
+    }
+  }
+
+  // Masonry styles.
+  .d-tiles {
+    float: none !important;
+    margin: 0 !important;
+    display: block !important;
+    width: 100%;
+
+    .d-tiles-sizer,
+    .d-tiles-item {
+      width: 25%;
+    }
+
+    .d-tiles-item {
+      padding: 2px;
+    }
+
+    .d-tiles-item-2x2 {
+      width: 50%;
+    }
+
+    .d-tiles-item-2x1 {
+      width: 50%;
+    }
+
+    .d-tiles-item-1x2 {
+      width: 25%;
     }
   }
 }
-

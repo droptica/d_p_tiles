@@ -7,11 +7,3 @@ d_p_tiles:
   version: VERSION
   js:
     js/d_p_tiles.js: {}
-
-justifiedgallery:
-  version: VERSION
-  js:
-    /libraries/justifiedgallery/dist/js/jquery.justifiedGallery.min.js: {}
-  css:
-    theme:
-      /libraries/justifiedgallery/dist/css/justifiedGallery.min.css: {}
