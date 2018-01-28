@@ -11,7 +11,7 @@ Put this module in the "require" section of your composer.json. Remember to inst
 
 ```json
 "require": {
-  "droptica/d_p_tiles.js":  "^1.0",
+  "droptica/d_p_tiles":  "^1.0",
   "drupal/colorbox": "^1.4",
   "npm-asset/jquery-colorbox": "^1.6",
   "npm-asset/masonry-layout": "^4.2.1"
@@ -24,7 +24,7 @@ In the "repositories" section put:
 "repositories": {
   "droopler-tiles": {
     "type": "git",
-    "url":  "git@github.com:droptica/d_p_tiles.js.git"
+    "url":  "git@github.com:droptica/d_p_tiles.git"
   }
 }
 ```
