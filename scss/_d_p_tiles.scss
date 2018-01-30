@@ -5,6 +5,9 @@
 // Colour variables used in this paragraph
 $d-p-tiles-line-color: $color-agamemnon !default;
 $d-p-tiles-color: $color-hecuba !default;
+$d-p-tiles-overlay-background: $color-cassandra !default;
+$d-p-tiles-overlay-color: $color-odysseus !default;
+$d-p-tiles-overlay-opacity: 0.6 !default;
 
 // Margins, paddings and sizing.
 $d-p-tiles-line-margin-top: 1rem !default;
@@ -87,6 +90,36 @@ $d-p-tiles-margin-y: 5% !default;
       @include media-breakpoint-down(sm) {
         width: 50%;
       }
+    }
+
+    .d-tiles-caption {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: $d-p-tiles-overlay-background;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      div {
+        color: $d-p-tiles-overlay-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        small {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .d-tiles-caption:hover {
+      opacity: $d-p-tiles-overlay-opacity;
     }
   }
 }
