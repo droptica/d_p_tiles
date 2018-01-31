@@ -2,7 +2,7 @@
 
   'use strict';
 
-  Drupal.behaviors.droopler_subtheme = {
+  Drupal.behaviors.d_p_tiles = {
     attach: function (context, settings) {
       // Enable Masonry.
       $(document).ready(function() {
