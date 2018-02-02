@@ -50,4 +50,9 @@ Finally add this to "extra" section as first item in "installer-paths":
 
 4. Run **gulp compile** in droopler_subtheme directory
 5. Enable module in Drupal.
-6. Enjoy the new paragraph :-). Remember - if you want a tile to be 2x bigger than others - append "2x2" string to image's ALT text.
+6. Enjoy the new paragraph :-). 
+
+## Usage ##
+
+* If you want a tile to be 2x bigger than others - append "2x2" string to image's ALT text. The module will strip this string before showing image to the user.
+* If you wish to show title and subtitle on photo hover write the ALT as "Here is Title / Here is Subtitle". 
