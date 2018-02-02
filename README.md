@@ -43,7 +43,7 @@ Finally add this to "extra" section as first item in "installer-paths":
 3. Include module's scss in droopler_subtheme style.scss file
 
 ```scss
-@import "../../../../modules/contrib/d_p_tiles.js/scss/d_p_tiles.js";
+@import "../../../../modules/contrib/d_p_tiles/scss/d_p_tiles.scss";
 ```
 
 **Note**: Any changes made in this file won't be caught by **gulp watch**.
